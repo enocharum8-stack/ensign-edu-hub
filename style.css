@@ -1385,7 +1385,7 @@ text-align:center;
 /* For smaller screens (phones) */
 @media only screen and (max-width: 768px) {
   .welcome-text {
-    top: 20%;          /* middle vertically */
+    top: 15%;          /* middle vertically */
     left: 50%;         /* middle horizontally */
     transform: translate(-50%, -50%); /* center exactly */
     font-size: 1.5rem; /* smaller font for mobile */
