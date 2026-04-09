@@ -183,8 +183,8 @@ const structure = {
     Science: { Mathematics: {}, Physics: {} },
     Law: {},
     Engineering: {
-        "Electrical Engineering": { Electronics: {}, Power: {} },
-        "Mechanical Engineering": { Production: {}, Automotive: {} }
+        "Electrical Engineering": {},
+        "Mechanical Engineering": {}
     }
 };
 
