@@ -1390,5 +1390,7 @@ text-align:center;
     transform: translate(-50%, -50%); /* center exactly */
     font-size: 1.5rem; /* smaller font for mobile */
     text-align: center; /* center text inside div */
+      max-width: 90%;
+    word-wrap: break-word;
   }
 }
