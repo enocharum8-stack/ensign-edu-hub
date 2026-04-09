@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ensign Edu HUB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Ensign Edu HUB</h1>
+
+<input type="text" placeholder="Search PDFs..." class="search">
+
+<div>
+<button id="themeToggle">🌙</button>
+<button class="login">Login</button>
+</div>
+</header>
+
+<div class="container">
+
+
+
+
+<span id="welcomeUser" class="welcome-text"></span>
+
+
+<span id="onlineStatus" class="online-status"></span>
+<main>
+
+<section class="hero">
+<h2>Learn Smarter</h2>
+<p>Upload • Share • Discuss</p>
+</section>
+
+<div class="top-nav">
+<button id="backBtn">← Back</button>
+<div id="breadcrumb">Home</div>
+</div>
+
+<section class="faculties" id="contentArea"></section>
+
+</main>
+
+</div>
+
+
+
+<!-- PDF MODAL -->
+
+<div id="pdfModal" class="pdf-modal">
+<div class="pdf-header">
+<span id="closePdf">✖</span>
+</div>
+<iframe id="pdfFrame"></iframe>
+</div>
+
+
+
+<div id="loginModal" class="login-modal">
+  <div class="login-box">
+
+    <!-- SIGNUP FIRST -->
+    <div id="signupSection">
+      <h3>Create Account</h3>
+
+      <input id="firstName" placeholder="First Name">
+      <input id="lastName" placeholder="Last Name">
+      <input id="signupUsername" placeholder="Username">
+
+      <select id="department">
+        <option>Computer Science</option>
+        <option>Mathematics</option>
+        <option>Physics</option>
+      </select>
+
+      <h5>Insert your picture (optional)</h5>
+      <input type="file" id="signupPhoto">
+
+      <button id="signupBtn">Sign Up</button>
+
+      <p>Already have account?
+        <span id="showLogin" style="cursor:pointer;color:blue;">Login</span>
+      </p>
+    </div>
+
+    <!-- LOGIN SECTION -->
+    <div id="loginSection" style="display:none;">
+      <h3>Login</h3>
+      <input type="text" id="loginUsername" placeholder="Username">
+      <button id="loginBtn">Login</button>
+    </div>
+
+  </div>
+</div>
+
+<div id="chatModal" class="chat-modal">
+  <div class="chat-box">
+    <div class="chat-header">
+      <span id="chatTitle">Chat</span>
+      <span id="closeChat">✖</span>
+    </div>
+
+    <div id="chatMessages" class="chat-messages"></div>
+    
+    <div id="typingIndicator" class="typing-indicator"></div>
+
+    <div class="chat-input">
+        <div id="replyBox" class="reply-box">
+Replying... <span id="cancelReply">✖</span>
+</div>
+      <input type="text" id="chatInput" placeholder="Type message...">
+      <button id="sendChat">Send</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+<div id="messageMenu" class="message-menu">
+  <div id="menuReply">Reply</div>
+  <div id="menuEdit">Edit</div>
+  <div id="menuDelete">Delete</div>
+</div>
+
+<footer id="copyrightFooter">
+© 2026 Ensign Edu HUB — Built by Maxh Technologies...
+</footer>
+
+</body>
+</html>
