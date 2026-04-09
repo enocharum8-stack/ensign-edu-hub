@@ -1371,3 +1371,24 @@ margin-bottom: auto;
 text-align:center;
 }
 }
+
+
+.welcome-text {
+  position: absolute; /* or relative if you prefer */
+  top: 50px;          /* distance from top on big screens */
+  left: 50px;         /* side position on big screens */
+  transform: translate(0, 0); /* no shift on big screens */
+  font-size: 2rem;    /* reasonable size for desktop */
+  transition: all 0.3s ease; /* smooth resizing */
+}
+
+/* For smaller screens (phones) */
+@media only screen and (max-width: 768px) {
+  .welcome-text {
+    top: 20%;          /* middle vertically */
+    left: 50%;         /* middle horizontally */
+    transform: translate(-50%, -50%); /* center exactly */
+    font-size: 1.5rem; /* smaller font for mobile */
+    text-align: center; /* center text inside div */
+  }
+}
