@@ -1342,3 +1342,10 @@ text-align:center;
 margin:8px auto;
 font-size:clamp(13px,2.5vw,16px);
 }
+
+
+@media (max-width:480px){
+.search{
+max-width:140px;
+}
+}
